@@ -8,17 +8,16 @@
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.3.1</version>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.1</version>
             <configuration>
-                <warName>JavaEEWebApp</warName>  <!-- 作成するWARファイルの名前 -->
-                <source>1.8</source>  <!-- 使用するJavaのバージョンを指定 -->
-                <target>1.8</target>  <!-- 使用するJavaのバージョンを指定 -->
-   
+                <source>1.8</source>  <!-- Java 8を指定 -->
+                <target>1.8</target>  <!-- Java 8を指定 -->
             </configuration>
         </plugin>
     </plugins>
 </build>
+
 
 <dependencies>
     <dependency>
