@@ -12,6 +12,9 @@
             <version>3.3.1</version>
             <configuration>
                 <warName>JavaEEWebApp</warName>  <!-- 作成するWARファイルの名前 -->
+                <source>1.8</source>  <!-- 使用するJavaのバージョンを指定 -->
+                <target>1.8</target>  <!-- 使用するJavaのバージョンを指定 -->
+   
             </configuration>
         </plugin>
     </plugins>
