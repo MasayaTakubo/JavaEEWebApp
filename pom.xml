@@ -4,7 +4,8 @@
   <artifactId>JavaEEWebApp2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-<build>
+
+  <build>
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -15,18 +16,25 @@
                 <target>1.8</target>  <!-- Java 8を指定 -->
             </configuration>
         </plugin>
+
+        <!-- maven-war-pluginのバージョンを最新に変更 -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.1</version> <!-- 最新バージョンに更新 -->
+            <configuration>
+                <warName>JavaEEWebApp</warName>  <!-- 作成するWARファイルの名前 -->
+            </configuration>
+        </plugin>
     </plugins>
-</build>
+  </build>
 
-
-<dependencies>
+  <dependencies>
     <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>4.0.1</version>
         <scope>provided</scope>
     </dependency>
-</dependencies>
-
-
+  </dependencies>
 </project>
